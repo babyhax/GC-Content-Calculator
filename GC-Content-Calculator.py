@@ -35,5 +35,5 @@ print "aantal t's: " + str(t)
 #0. Converteert het naar een floating point
 gc = (g+c+0.) / (a+t+c+g+0.)
 
-#Print de uiteindelijke GC-Inhoud waarde
-print "gc inhoud: " + str(gc)
+#Print de uiteindelijke GC-Content waarde
+print "GC-Content: " + str(gc)
