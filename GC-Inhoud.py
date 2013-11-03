@@ -1,19 +1,20 @@
 #!/usr/bin/env python
-#GCinhoud.py
-#Berekent de GC inhoud
+#GC-Inhoud.py
+#Berekent de GC-inhoud van een rauw DNA bestand
+#https://github.com/Plofkip/GC-Inhoud
 
-genen = open("voer-hier-bestand-in.txt","r")
+genen = open("voer-hier-het-txt-bestand-in.txt","r")
 
-#zorg dat de letters integers zijn (zet ze naar nul)
+#Converteert de variabelen naar integers
 g=0;
 a=0;
 c=0;
 t=0;
 
-#zorg dat de eerste lijn niet meedoet
+#Slaat de eerste regel over
 genen.readline()
 
-
+#Telt de waarden van de GACT variabelen op voor elke GACT die voorkomt
 for line in genen:
 	line = line.lower()
 	for char in line:
@@ -26,12 +27,14 @@ for line in genen:
 		if char == "t":
 			t+=1
 
+#Print de GACT waarde
 print "aantal g's: " + str(g)
 print "aantal a's: " + str(a)
 print "aantal c's: " + str(c)
 print "aantal t's: " + str(t)
 
-#met 0. converteer ik hem naar een floating point
+#0. Converteert het naar een floating point
 gc = (g+c+0.) / (a+t+c+g+0.)
 
+#Print de uiteindelijke GC-Inhoud waarde
 print "gc inhoud: " + str(gc)
