@@ -1,7 +1,6 @@
 #!/usr/bin/env python
-#GC-Inhoud.py
-#Python script dat de GC-Content van een DNA bestand kan berekenen
-#https://github.com/Plofkip/GC-Inhoud
+#GC-Content-Calculator.py, Python script dat de GC-Content van een DNA bestand kan berekenen
+#https://github.com/Plofkip/GC-Content-Calculator
 
 genen = open("voer-hier-het-txt-bestand-in.txt","r")
 
@@ -27,7 +26,7 @@ for line in genen:
 		if char == "t":
 			t+=1
 
-#Print de GACT waarde
+#Print de waarde van de GACT variabelen
 print "aantal g's: " + str(g)
 print "aantal a's: " + str(a)
 print "aantal c's: " + str(c)
