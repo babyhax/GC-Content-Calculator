@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #GC-Inhoud.py
-#Berekent de GC-inhoud van een rauw DNA bestand
+#Python script dat de GC-Content van een DNA bestand kan berekenen
 #https://github.com/Plofkip/GC-Inhoud
 
 genen = open("voer-hier-het-txt-bestand-in.txt","r")
